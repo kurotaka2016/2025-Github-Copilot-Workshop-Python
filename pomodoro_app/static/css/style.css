@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(180deg, #7b83eb 0%, #a7b1f9 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
+    margin: 0;
+}
+
+.container {
+    background: #f8f9fb;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(123, 131, 235, 0.15);
+    width: 340px;
+    margin: 40px auto;
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3a3a3a;
+    margin-bottom: 24px;
+}
+
+.timer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-circle {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 16px;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer-label {
+    font-size: 1rem;
+    color: #7b83eb;
+    margin-bottom: 4px;
+}
+
+#timer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.button-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+button.primary {
+    background: linear-gradient(90deg, #7b83eb 0%, #a7b1f9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(123, 131, 235, 0.10);
+    transition: background 0.2s;
+}
+
+button.primary:hover {
+    background: linear-gradient(90deg, #6a72d6 0%, #8c97e6 100%);
+}
+
+button.secondary {
+    background: #fff;
+    color: #7b83eb;
+    border: 2px solid #7b83eb;
+    border-radius: 24px;
+    padding: 10px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(123, 131, 235, 0.10);
+    transition: background 0.2s, color 0.2s;
+}
+
+button.secondary:hover {
+    background: #f0f2fa;
+    color: #5a62b6;
+}
